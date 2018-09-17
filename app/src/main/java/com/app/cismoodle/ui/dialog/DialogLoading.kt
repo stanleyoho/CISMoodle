@@ -7,7 +7,7 @@ import android.util.DisplayMetrics
 import android.view.WindowManager
 import com.app.cismoodle.R
 
-class DialogLoading @JvmOverloads constructor(context: Context, themeResId: Int = 0) : Dialog(context, R.style.loadingDialog) {
+class DialogLoading constructor(context: Context) : Dialog(context, R.style.loadingDialog) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
