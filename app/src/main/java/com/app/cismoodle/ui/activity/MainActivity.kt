@@ -39,8 +39,8 @@ class MainActivity : BaseActicity() {
     }
 
     override fun initEvent(){
-        btnHome.setOnClickListener { myWebView?.loadUrl(Constants.CAI_HOST) }
-        btnMoodle.setOnClickListener { myWebView?.loadUrl(Constants.CAI_MOODLE) }
+        btnHome.setOnClickListener { myWebView?.loadUrl(Constants.CIS_HOST) }
+        btnMoodle.setOnClickListener { myWebView?.loadUrl(Constants.CIS_MOODLE) }
     }
 
     override fun initView(){
@@ -52,7 +52,7 @@ class MainActivity : BaseActicity() {
         myWebView = MyWebView(applicationContext)
         myWebView?.webChromeClient = myChromeClient
         myWebView?.webViewClient = myWebClient
-        myWebView?.loadUrl(Constants.CAI_HOST)
+        myWebView?.loadUrl(Constants.CIS_HOST)
 
         val layoutParams = LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
